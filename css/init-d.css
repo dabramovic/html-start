@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	
+	/* ova dva muce pushy */
+	min-height: 100% !important;
+	-webkit-overflow-scrolling: touch;
+	
+	/*sticky foo*/
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin: 0; 
+	font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font-weight:normal;
+	font-size: 16px; 
+	
+	/* sticky foo Margin bottom by footer height */
+	margin-bottom: 60px;
+}   
+body {
+
+}
+a, a:visited {
+	text-decoration: none;	
+}
+a:hover, a:active {
+	outline: none;
+	text-decoration: none;
+	transition: all 0.3s ease-in;
+}
+
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+a img, img {border: none;}
+
+h6.ulnaslov {font-weight: bold; font-size: 16px; margin-top: 1.4em;}
+ul.ulfix {
+	padding-left: 20px;
+	list-style: none;
+	line-height: 20px;
+}
+ul.ulfix li {
+	text-indent: -1.3em;
+	display: block;
+}
+
+ul.ulfix li::before {
+	content: "• ";
+	color: #0679ae;
+	font-size: 1.4em;
+	position: relative;
+	top: 1px;
+}
+.clear {
+	height: 1px;
+	line-height: 0;
+	font-size: 1px;
+	clear: both;
+}
+
+.marg0{margin:0px;}
+.margtop0{margin-top:0px;}
+.margtop15 {margin-top: 15px;}
+.margtop20 {margin-top: 20px;}
+.margbot20 {margin-bottom: 20px;}
+.margtop30 {margin-top: 30px;}
+.margtop60 {margin-top: 60px;}
+.margtop90 {margin-top: 90px;}
+.pad0 {padding:0;}
+.padleft30 {padding-left:30px;}
+.relative {position:relative;}
+
+.fw100 {font-weight: 100;}
+.fw200 {font-weight: 200;}
+.fw300 {font-weight: 300;}
+.fw400 {font-weight: 400;}
+.fw500 {font-weight: 500;}
+.fw600 {font-weight: 600;}
+.fw700 {font-weight: 700;}
+.fw800 {font-weight: 800;}
+.fw900 {font-weight: 900;}
+
+/* scroll na vrh */
+.navrh {
+	background-color: rgba(119, 135, 147, 0.87);
+	padding: 5px 17px;
+	color: #fff;
+	position: fixed;
+	right: 20px;
+	bottom:20px;
+	z-index: 999;
+	font-size:24px;
+}
+
+.navrh:hover {
+	color: #fff;
+	background-color:#005a9c;
+}
+.btn-d {border-radius: 0; background-image: none; box-shadow: none; border: none; text-shadow: none;}
+/********* ovo je za testove ********************************/
+
+/* test za navrh */
+.h5ml.sadrzaj {min-height: 1000px;}
+
+/* test za Lato */
+.h5ml.sadrzaj.lato {font-family: 'Lato'; font-weight: 400;}
+
+header {
+	width: 100%;
+	color: #fff;
+	background-color: #f9f9f9;
+	padding: 10px 0;
+	background-color:#005a9c;
+	position: relative;
+}
+header a {color: #fff;}
+header .sirinaTest {
+	font-size: 1em; text-align: center; 
+	
+	position: absolute; 
+	left:0; right:0;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	top:20px;
+	max-width: 300px;
+}
+
+
+header {position: fixed; z-index: 999;}
+.ocistiSticky {padding-top: 100px;}
+header.sticky {
+	width: 100%;
+	color: #fff;
+	background-color: rgba(119, 135, 147, 0.87);
+    -webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+    -webkit-box-shadow: 0px 2px 39px -10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 2px 39px -10px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 39px -10px rgba(0,0,0,0.5);
+		
+	transition: all .5s ease-in;
+}
+header.sticky .clearOpis {opacity: 0; display: none;}
+
+/*sticky foo*/
+.push-sticky-foo {height: 60px;}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+
+}
+/* Not required for template or sticky footer method. */
+
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.broj {padding: 30px; background-color: #f9f9f9; color: #484848; text-align: center; font-size: 32px; font-weight: bold; display: none; width: 90px; height: 90px; margin-top: 10px; padding-top: 20px;}
+
+.magnific-gallery {margin:60px 0;}
+.magnific-gallery div {padding: 0;}
+.magnific-gallery a {display: block;}
+
+img.desaturate{
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: grayscale(100%);
+	/*filter: url(desaturate.svg#greyscale);*/
+}
+
+.magnific-gallery a:hover, .magnific-gallery a:hover img  {transition: all .5s ease-in;}
+
+.magnific-gallery a.greyscale:hover img {
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: grayscale(100%);
+	/*filter: url(desaturate.svg#greyscale);*/
+	
+}
+
+/*table saw*/
+.tablesaw tr:nth-child(odd) {background: #f1f5f7;}
+.tablesaw tr:nth-child(even) {background:#e1e6e9;}
+.tablesaw .nobg {background: none !important;}
+.tblnapomena {font-size: 14px; color: #666; margin-bottom: 5px;}
+.tblnapomena.prva {padding-top: 20px; margin-bottom: 0;}
+
+
+/*slider*/
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+.big {max-height: 450px; overflow: hidden;}
+.big .slick-slide {margin: 0;}
+
+
+/*search*/
+.search {position: relative; top:10px;}
+.searchholder {
+	position: absolute;
+	z-index: 999;
+	width: 0;
+	overflow: hidden;
+	top: 10px;
+	right: -15px;
+	transition: all 0.5s ease;
+	height: 34px;
+	overflow: hidden;
+}
+
+.searchholder.active {
+	width: 250px;
+	transition: all 0.5s ease;
+}
+
+.searchholder .form-control {
+	width: 200px;
+	float: left;
+	border:0;
+	background: transparent;
+	box-shadow: none;
+	border-radius: 0 !important;
+	border-color: #fff !important;
+	border-bottom: 1px solid;
+}
+

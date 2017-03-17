@@ -1,0 +1,31 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1170px){
+
+}
+@media only screen and (max-width : 1169px){
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+
+}
+@media only screen and (max-width : 991px){
+	
+}
+
+/* Small Devices, Tablets */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+
+}
+
+/*************** MOJE ********************/
